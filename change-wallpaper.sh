@@ -58,7 +58,7 @@ fi
 
 export CW_IMAGE_URL="https://source.unsplash.com/$CW_SCREEN_SIZE/?$1";
 
-wget "$CW_IMAGE_URL" --content-disposition -O "$CW_DIRECTORY/$CW_FILE_NAME" -a "$CW_DIRECTORY/log" &> /dev/null
+wget "$CW_IMAGE_URL" --content-disposition -O "$CW_DIRECTORY/$CW_FILE_NAME" -a "/home/$USER/.change-wallpaper/log" &> /dev/null
 
 if [[ "$?" != 0 ]];
 then
